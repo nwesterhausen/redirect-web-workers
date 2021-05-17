@@ -1,0 +1,11 @@
+name = "authheaders-auth1"
+type = "javascript"
+
+account_id = "8ea70b72cd30a9295d3a0a655ceb0b9a"
+workers_dev = true
+route = ""
+zone_id = ""
+
+kv_namespaces = [
+    { binding = "AUTH", preview_id = "72905e8449aa4c2f8fe9be96b38dfaf8", id = "0a11fe1e802e417babf551dae4e85221" }
+]
