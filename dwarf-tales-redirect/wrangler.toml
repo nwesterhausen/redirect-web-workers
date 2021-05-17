@@ -1,0 +1,7 @@
+name = "dwarf-tales-redirect"
+type = "javascript"
+
+account_id = "8ea70b72cd30a9295d3a0a655ceb0b9a"
+workers_dev = true
+route = ""
+zone_id = ""
