@@ -1,12 +1,15 @@
-addEventListener('fetch', event => {
+const base = "https://nwest.wiki"
+const statusCode = 301
+
+async function handleRequest(request) {
+  const url = new URL(request.url)
+  const { pathname, search } = url
+
+  const destinationURL = base + pathname + search
+
+  return Response.redirect(destinationURL, statusCode)
+}
+
+addEventListener("fetch", async event => {
   event.respondWith(handleRequest(event.request))
 })
-/**
- * Respond with hello worker text
- * @param {Request} request
- */
-async function handleRequest(request) {
-  return new Response('Hello worker!', {
-    headers: { 'content-type': 'text/plain' },
-  })
-}
